@@ -3,5 +3,5 @@
 # Virkano 
 
 
-[All alone with you](http://www.virkano.com/web-bookmarks/)
-[Get Started](/README.md)
+[About My Project](/README.md)
+[Get Started](http://www.virkano.com/web-bookmarks/)
