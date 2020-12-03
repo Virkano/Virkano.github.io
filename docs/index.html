@@ -19,10 +19,14 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"
     />
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
   </head>
   <body>
+    
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <div id="container"></div>
     <div id="app"></div>
+    
     <script>
       window.$docsify = {
         name: "Virkano", //
@@ -105,6 +109,19 @@
         }
       });
     </script>
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+      var gitment = new Gitment({
+      id: '', // 可选。默认为 location.href
+      owner: 'Virkano',
+      repo: 'Virkano.github.io',
+      oauth: {
+          client_id: '2322e64102bf0a6bdf78',
+          client_secret: 'd0e5338a8e392bb64cb0ce5434a8b2359a1d4d81',
+      },
+      })
+      gitment.render('container')
+      </script> 
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
     <!-- 代码复制 -->

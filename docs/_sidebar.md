@@ -1,5 +1,4 @@
 - 前端杂记篇
-
   - [颜色选择器](/getting-Started/颜色选择器.md)
   - [十大经典排序算法](/getting-Started/十大经典排序算法.md)
   - [百度语言合成](/getting-Started/百度语言合成.md)
