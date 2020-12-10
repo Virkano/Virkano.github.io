@@ -104,6 +104,7 @@
       }
     });
   </script>
+
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
@@ -119,12 +120,20 @@
     const gitalk = new Gitalk({
       clientID: '2322e64102bf0a6bdf78',
       clientSecret: 'd0e5338a8e392bb64cb0ce5434a8b2359a1d4d81',
-      repo: 'Virkano.github.io',
+      repo: 'https://github.com/Virkano/Virkano.github.io/issues',
       owner: 'Virkano',
       admin: ['Kano Zhao (Virkano)'],
       // facebook-like distraction free mode
-      distractionFreeMode: false
+      distractionFreeMode: false,
+      title: location.hash.match(/#(.*?)([?]|$)/)[1],
+      id: location.hash.match(/#(.*?)([?]|$)/)[1],
     })
+    // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
+    window.onhashchange = function(event){
+      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
+        location.reload()
+      }
+    }
   </script>
   <style>
     .sidebar img {
