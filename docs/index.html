@@ -135,6 +135,11 @@
       }
     }
   </script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
   <style>
     .sidebar img {
       max-width: 80px;
