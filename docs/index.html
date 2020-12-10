@@ -1,141 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Virkano</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Description" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="./media/icon.png"
-      id="dynamic-favicon"
-    />
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"
-    />
-    <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"> -->
-  </head>
-  <body>
-    
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    
-    <div id="app">
 
-      <div id="container"></div>
-    </div>
-    
-    <script>
-      window.$docsify = {
-        name: "Virkano", //
-        // repo: "https://github.com/Virkano",
-        auto2top: true, //切换页面后是否自动跳转到页面顶部。
-        maxLevel: 2,
-        loadSidebar: true,
-        // loadSidebar: '../notes/Loading.html',
-        coverpage: true,
-        onlyCover: true,
-        notFoundPage: "/lib/404.md",
-        logo: "/media/icon.png",
-        search: {
-          maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-          paths: [], // or 'auto'
-          placeholder: "为什么不问问神奇的海螺?",
+<head>
+  <meta charset="UTF-8" />
+  <title>Virkano</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="./media/icon.png" id="dynamic-favicon" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+  <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"> -->
+</head>
 
-          // 支持本地化
-          placeholder: {
-            "/zh-cn/": "搜索",
-            "/": "Type to search",
-          },
+<body>
 
-          noData: "为什么找不到我也在找原因!",
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
-          // 支持本地化
-          noData: {
-            "/zh-cn/": "找不到结果",
-            "/": "No Results",
-          },
-          // 搜索标题的最大程级, 1 - 6
-          depth: 2,
+  <div id="app">
+
+    <div id="container"></div>
+  </div>
+
+  <script>
+    window.$docsify = {
+      name: "Virkano", //
+      // repo: "https://github.com/Virkano",
+      auto2top: true, //切换页面后是否自动跳转到页面顶部。
+      maxLevel: 2,
+      loadSidebar: true,
+      // loadSidebar: '../notes/Loading.html',
+      coverpage: true,
+      onlyCover: true,
+      notFoundPage: "/lib/404.md",
+      logo: "/media/icon.png",
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: [], // or 'auto'
+        placeholder: "为什么不问问神奇的海螺?",
+
+        // 支持本地化
+        placeholder: {
+          "/zh-cn/": "搜索",
+          "/": "Type to search",
         },
-        copyCode: {
-          buttonText: "复制",
-          errorText: "❌ 失败",
-          successText: "👌 成功",
+
+        noData: "为什么找不到我也在找原因!",
+
+        // 支持本地化
+        noData: {
+          "/zh-cn/": "找不到结果",
+          "/": "No Results",
         },
-        // 自定义插件
-        plugins: [
-                function(hook) {
-                    var footer = [
-                        '<hr/>',
-                        '<footer style="text-align: right;">',
-                        '<h5>Copyright &copy; ', +new Date().getFullYear() +
-                        '.<a href="https://github.com/virkano">Virkano</a><h5>',
-                        '</footer>'
-                    ].join('')
+        // 搜索标题的最大程级, 1 - 6
+        depth: 2,
+      },
+      copyCode: {
+        buttonText: "复制",
+        errorText: "❌ 失败",
+        successText: "👌 成功",
+      },
+      // 自定义插件
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer style="text-align: right;">',
+            '<h5>Copyright &copy; ', +new Date().getFullYear() +
+            '.<a href="https://github.com/virkano">Virkano</a><h5>',
+            '</footer>'
+          ].join('')
 
-                    hook.afterEach(function(html) {
-                        return html + footer
-                    })
+          hook.afterEach(function (html) {
+            return html + footer
+          })
 
-                }
-            ],
-      };
-      var music = document.createElement("audio");
-      music.src =
-        "static/music/EGOIST - Departures~あなたにおくるアイの歌~ (Departures ～送给你的爱之歌～).mp3";
-      music.autoplay = "autoplay";
-      music.id = "music";
-      document.getElementsByTagName("body")[0].appendChild(music);
-      document.getElementById("music").volume = 0.2;
-      var audio = document.getElementById("music");
-      audio.pause();
-      // ctrl + 回车销毁
-      $(document).keydown(function (e) {
-        if (e.ctrlKey && e.keyCode == 13) {
-          $("#music").remove();
         }
-      });
-      // 回车暂停或播放
-      $(document).keydown(function (event) {
-        if (event.keyCode == 13) {
-          if (audio.paused) {
-            audio.play();
-          } else {
-            audio.pause();
-          }
+      ],
+    };
+    var music = document.createElement("audio");
+    music.src =
+      "static/music/EGOIST - Departures~あなたにおくるアイの歌~ (Departures ～送给你的爱之歌～).mp3";
+    music.autoplay = "autoplay";
+    music.id = "music";
+    document.getElementsByTagName("body")[0].appendChild(music);
+    document.getElementById("music").volume = 0.2;
+    var audio = document.getElementById("music");
+    audio.pause();
+    // ctrl + 回车销毁
+    $(document).keydown(function (e) {
+      if (e.ctrlKey && e.keyCode == 13) {
+        $("#music").remove();
+      }
+    });
+    // 回车暂停或播放
+    $(document).keydown(function (event) {
+      if (event.keyCode == 13) {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
         }
-      });
-    </script>
-    <!-- <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-    <script>
-      var gitment = new Gitment({
+      }
+    });
+  </script>
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <script>
+    var gitment = new Gitment({
       id: '', // 可选。默认为 location.href
       owner: 'Virkano',
       repo: 'Virkano.github.io',
       oauth: {
-          client_id: '2322e64102bf0a6bdf78',
-          client_secret: 'd0e5338a8e392bb64cb0ce5434a8b2359a1d4d81',
+        client_id: '2322e64102bf0a6bdf78',
+        client_secret: 'd0e5338a8e392bb64cb0ce5434a8b2359a1d4d81',
       },
-      })
-      gitment.render('container')
-      </script>  -->
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-    <!-- 代码复制 -->
-    <script src="//unpkg.com/docsify-copy-code"></script>
-    <style>
-      .sidebar img {
-        max-width: 80px;
-      }
-      .cover-main img{
-        max-width: 120px;
-      } 
-    </style>
-  </body>
+    })
+    gitment.render('container')
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <!-- 代码复制 -->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'Github Application Client ID',
+      clientSecret: 'Github Application Client Secret',
+      repo: 'Github repo',
+      owner: 'Github repo owner',
+      admin: ['Github repo collaborators, only these guys can initialize github issues'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+  </script>
+  <style>
+    .sidebar img {
+      max-width: 80px;
+    }
+
+    .cover-main img {
+      max-width: 120px;
+    }
+  </style>
+</body>
+
 </html>
