@@ -104,19 +104,6 @@
       }
     });
   </script>
-  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-  <script>
-    var gitment = new Gitment({
-      id: '', // 可选。默认为 location.href
-      owner: 'Virkano',
-      repo: 'Virkano.github.io',
-      oauth: {
-        client_id: '2322e64102bf0a6bdf78',
-        client_secret: 'd0e5338a8e392bb64cb0ce5434a8b2359a1d4d81',
-      },
-    })
-    gitment.render('container')
-  </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
@@ -130,11 +117,11 @@
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
     const gitalk = new Gitalk({
-      clientID: 'Github Application Client ID',
-      clientSecret: 'Github Application Client Secret',
-      repo: 'Github repo',
-      owner: 'Github repo owner',
-      admin: ['Github repo collaborators, only these guys can initialize github issues'],
+      clientID: '2322e64102bf0a6bdf78',
+      clientSecret: 'd0e5338a8e392bb64cb0ce5434a8b2359a1d4d81',
+      repo: 'Virkano.github.io',
+      owner: 'Virkano',
+      admin: ['Kano Zhao (Virkano)'],
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
