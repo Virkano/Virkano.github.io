@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /goodies
-Sitemap: https://virkano.github.io/sitemap.xml
-Host: https://virkano.github.io
