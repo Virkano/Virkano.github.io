@@ -137,7 +137,7 @@ exports.sourceNodes = ({
   cache,
 }) => {
   const { createNode } = actions;
-  const CC_PROJECTS_URI = 'https://virkano.github.io/CanvasFun/data.json'; ////
+  const CC_PROJECTS_URI = 'https://www.virkano.com/CanvasFun/data.json';
 
   const createCreativeCodingNode = (project, i) => {
     const node = {

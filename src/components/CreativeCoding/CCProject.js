@@ -9,7 +9,7 @@ import { CCard } from './CreativeCoding.style';
 
 const CCProject = ({ node }) => {
   let img = node.img.replace(
-    'https://virkano.github.io/CanvasFun/thumbnails/',////
+    'https://www.virkano.com/CanvasFun/thumbnails/',
     ''
   );
   return (
