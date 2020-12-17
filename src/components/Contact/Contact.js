@@ -52,7 +52,7 @@ function Contact() {
               name="name"
               type="text"
               required
-              placeholder="John Doe"
+              placeholder="Kano Zhao"
             />
           </label>
           <label className="label__message">
