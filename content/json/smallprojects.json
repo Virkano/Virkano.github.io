@@ -18,7 +18,7 @@
   {
     "title": "Simple Rockets",
     "links": {
-      "demo": "https://simplerockets.herokuapp.com",
+      "demo": "https://anuraghazra-simplerockets.glitch.me/",
       "src": "https://github.com/anuraghazra/simplerockets"
     },
     "description": "Simple Rockets is an online multiplayer game made with NodeJS and Socket.io. All of the players can join the game with their unique name and play."
@@ -26,8 +26,8 @@
   {
     "title": "ParticleBrush",
     "links": {
-      "demo": "https://anuraghazra.github.io/ParticleBrush/",
-      "src": "https://github.com/anuraghazra/ParticleBrush"
+      "demo": "https://www.virkano.com/ParticleBrush/",
+      "src": "https://github.com/virkano/ParticleBrush"
     },
     "description": "Amazing Drawing App With Particles. Lots Of Colorful Particles"
   },
