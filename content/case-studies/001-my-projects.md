@@ -1,6 +1,6 @@
 ---
 title: My Porjects
-excerpt: List of projects that I am proud of.
+excerpt: 让我感到自豪的项目清单。
 
 iframe: //www.virkano.com/my-projects/
 demo: //www.virkano.com/my-projects/
