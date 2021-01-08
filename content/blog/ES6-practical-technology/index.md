@@ -1,8 +1,8 @@
 ---
-title: ES6的实用技术
-date: 2021-1-4 11:30:00
+title: ES6 practical technology
+date: 2021-1-3 11:30:00
 author: Kano Zhao
-tags: ["ES6"]
+tags: ["ES6","basal"]
 ---
 
 <!-- TOC -->

@@ -1,6 +1,6 @@
 ---
 title: 2021年最新前端学习路线
-date: 2020-12-28 11:30:00
+date: 2021-1-1 11:30:00
 author: Kano Zhao
 tags: ["front end", "learning path"]
 ---
@@ -15,7 +15,7 @@ tags: ["front end", "learning path"]
 
 先来看 github 上一大神制作的路线图：
 
-<img src="http://chuantu.xyz/t6/741/1609126275x1033348159.png" width="90%" />
+<img src="./images/frontend.png" width="90%" />
 
 小生不才仿照着写了一个 [前端学习路线](https://www.virkano.com/front-end-roadmap/#/) 急需你的帮助使它更加完善！！！
 
