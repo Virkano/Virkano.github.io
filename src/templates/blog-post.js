@@ -23,7 +23,7 @@ const BlogPost = ({ data, pageContext }) => {
     title: title,
     url: baseSlugUrl,
   };
-///
+
   const githubLink = `https://github.com/virkano/virkano.github.io/tree/develop/content${pageContext.slug}/index.md`;
 
   return (

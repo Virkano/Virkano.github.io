@@ -98,7 +98,6 @@ module.exports = {
         icon: config.siteLogo,
       },
     },
-    // NProgress
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {

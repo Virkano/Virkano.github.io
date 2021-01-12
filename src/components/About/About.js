@@ -28,8 +28,7 @@ const About = () => {
           I am especially focusing on Vue.js.
           <br />
           <br />
-          I'm also a certified graphic designer from "Ramakrishna Mission
-          Shilpamandira". I also do Graphic and UI designing. Since I love both
+          I also do Graphic and UI designing. Since I love both
           programming and designing, I'm also interested in creating
           programmatic designs and creative coding projects.
         </p>

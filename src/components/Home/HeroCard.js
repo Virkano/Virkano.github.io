@@ -15,7 +15,7 @@ function repeatString(str, count) {
     str += str;
     count--;
   }
-  str += str.substring(0, maxCount - str.length);
+  str += str.substring(0, maxCount - str.length)  ;
   return str;
 }
 
