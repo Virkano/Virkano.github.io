@@ -23,7 +23,7 @@ _NOTE: The default branch for this repo is `develop`, when you push or pull make
 Fork the repository. then clone the repo locally by doing -
 
 ```bash
-git clone https://github.com/anuraghazra/anuraghazra.github.io.git
+git clone https://github.com/virkano/virkano.github.io.git
 ```
 
 ### Step 2: Install Dependencies
@@ -31,7 +31,7 @@ git clone https://github.com/anuraghazra/anuraghazra.github.io.git
 cd into the directory
 
 ```bash
-cd anuraghazra.github.io
+cd virkano.github.io
 ```
 
 install all the dependencies
