@@ -1,5 +1,5 @@
 ---
-title: CSS
+title: Basal css
 date: 2021-1-4 11:35:00
 author: Kano Zhao
 tags: ["CSS", "basal"]

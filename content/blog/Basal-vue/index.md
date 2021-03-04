@@ -1,5 +1,5 @@
 ---
-title: Vue
+title: Basal vue
 date: 2021-1-6 11:30:00
 author: Kano Zhao
 tags: ["Vue", "basal"]

@@ -9,6 +9,8 @@ tags: ["front end", "learning path"]
 
 在正式开始之前，咱们先把心态放平，就像玩游戏，游戏满级也不是一天两天的事，满级之后也才是一个新的开始。。。无尽的追求完美~。时间上，掌握前端工程师的基本技能大概需要 4 个月到 1 年的时间（看自己的意志力和上进心），之后就是在工作实践中不断的提升自己，时刻关注业界新闻，保持在科技的最前沿。工作是一个长期的事情，咱们静下心来慢慢学。
 
+tips: ["Github地址"](https://github.com/Virkano/Virkano.github.io/blob/develop/content/blog/front-end-learning-path/index.md) → → →
+
 ------
 
 ## 完整技能大图

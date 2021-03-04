@@ -1,5 +1,5 @@
 ---
-title: Interview Code question
+title: interview code questions
 date: 2021-1-2 09:00:00
 author: Kano Zhao
 tags: ["interview", "codeing"]

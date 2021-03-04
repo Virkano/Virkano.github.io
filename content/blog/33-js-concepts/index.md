@@ -1,5 +1,5 @@
 ---
-title: 33-Js-Concepts
+title: 33-js-concepts
 date: 2021-1-15 11:35:00
 author: Kano Zhao
 tags: ["JavaScript", "basal"]
