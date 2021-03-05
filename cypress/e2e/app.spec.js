@@ -41,7 +41,7 @@ describe('App', () => {
   });
 
   it('should navigate to blog', () => {
-    const editGithubUrl = `https://github.com/Virkano/Virkano.github.io/tree/develop/content/blog/exciting-new-features-in-javascript/index.md`;
+    const editGithubUrl = `https://github.com/Virkano/Virkano.github.io/blob/develop/content/blog/front-end-learning-path/index.md`;
     cy.findByText(/blog/i, { selector: 'a' })
       .click()
       .findByText(/Random post/i)
