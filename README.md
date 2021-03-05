@@ -4,50 +4,50 @@
     <h2 align="center">Kano Zhao</h2>
   </a>
 </p> 
-<p align="center">Creative FrontEnd Web Developer</p>
+<p align="center">前端Web开发人员</p>
 
 
 
 
-## :rocket: Quick start
+## :rocket: 快速开始
 
-**Run the site locally**
+**在本地运行站点**
 
-_NOTE: The default branch for this repo is `develop`, when you push or pull make sure you specify the correct branch_
+注意：此存储库的默认分支为develop，当您推入或拉出时，请确保指定正确的分支
 
-### Step 1: Clone The Repo
+### 第1步：克隆仓库
 
-Fork the repository. then clone the repo locally by doing -
+通过执行以下操作在本地克隆存储库 -
 
 ```bash
 git clone https://github.com/virkano/virkano.github.io.git
 ```
 
-### Step 2: Install Dependencies
+### 步骤2：安装依赖项
 
-cd into the directory
+cd 进入目录
 
 ```bash
 cd virkano.github.io
 ```
 
-install all the dependencies
+安装所有依赖项
 ```bash
 npm install
 ```
 
-### Step 3: Start Development Server
+### 步骤3：启动开发服务器
 
-Then start the development Server
+启动开发服务器
 ```
 npm run develop
 ```
-After running the development server the site should be running on https://localhost:8000
+运行开发服务器后，该站点应在https：// localhost：8000上运行
 
 
-## :open_file_folder: What's inside?
+## :open_file_floder: 里面有什么？
 
-A quick look at the folder structure of this project.
+快速浏览该项目的文件夹结构。
 
     .
     ├── content
@@ -78,29 +78,29 @@ A quick look at the folder structure of this project.
         └───templates
 
 
-## Tools Used
+## 使用的工具
 
-1. Gatsby.js (of course)
-2. Styled Components for styling
-3. Cypress for E2E Testing
-4. Jest for Unit Testing
+1. Gatsby.js（当然）
+2. 样式化的样式化组件
+3. Cypress 用于端到端测试
+4. Jest 单元测试
 5. TravisCI for CI/CD
 
-## :v: Contributing
+## :v: 贡献
 
-*NOTE: if you want to change the [blog content](./content) or fix any typo you can do that from github's ui without cloning the repo locally*
+注意：如果您想更改博客内容或解决任何错字，您可以从github的ui中进行操作，而无需在本地克隆仓库
 
-After cloning & setting up the local project you can push the changes to your github fork and make a pull request.
+克隆并设置本地项目后，您可以将更改推送到github fork并发出请求请求。
 
-> You can also run the tests locally to see if everything works fine with
+> 您还可以在本地运行测试，以查看是否一切正常
 
-### Running tests
+### 运行测试
 ```bash
 npm run test
 npm run test:e2e
 ```
 
-### Pushing the changes
+### 推动变化
 
 ```bash
 git add .
