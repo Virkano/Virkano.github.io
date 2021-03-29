@@ -62,7 +62,7 @@ const Home = () => {
           <p className="adjust">CREATIVE FRONT-END WEB DEVELOPER</p>
 
           <div className="home__CTA">
-            <Button className="cta" as="a" href="#">
+            <Button className="cta" as="a" href="">
               Download Resume
             </Button>
 
