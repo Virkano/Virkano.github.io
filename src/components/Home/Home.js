@@ -62,7 +62,7 @@ const Home = () => {
           <p className="adjust">CREATIVE FRONT-END WEB DEVELOPER</p>
 
           <div className="home__CTA">
-            <Button className="cta" as="a" href="">
+            <Button className="cta" as="a" href="https://raw.githubusercontent.com/Virkano/Virkano.github.io/develop/src/static/me/%E8%B5%B5%E6%8C%AF%E6%9C%9D%E5%89%8D%E7%AB%AF%E7%AE%80%E5%8E%86.pdf">
               Download Resume
             </Button>
 
